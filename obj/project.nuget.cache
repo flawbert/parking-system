@@ -1,12 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "BEows4vHzKs=",
+  "dgSpecHash": "okqrNDTD+ZI=",
   "success": true,
   "projectFilePath": "/home/flawbert/parking-system/ParkingSystem.csproj",
-  "expectedPackageFiles": [
-    "/home/flawbert/.nuget/packages/microsoft.netcore.app.ref/6.0.36/microsoft.netcore.app.ref.6.0.36.nupkg.sha512",
-    "/home/flawbert/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.36/microsoft.aspnetcore.app.ref.6.0.36.nupkg.sha512",
-    "/home/flawbert/.nuget/packages/microsoft.netcore.app.host.linux-x64/6.0.36/microsoft.netcore.app.host.linux-x64.6.0.36.nupkg.sha512"
-  ],
+  "expectedPackageFiles": [],
   "logs": []
 }

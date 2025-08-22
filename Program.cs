@@ -1,59 +1,64 @@
-﻿using DesafioFundamentos.Models;
-
-// Coloca o encoding para UTF8 para exibir acentuação
+﻿using Models;
 Console.OutputEncoding = System.Text.Encoding.UTF8;
 
-decimal precoInicial = 0;
-decimal precoPorHora = 0;
+decimal initialPrice = 0;
+decimal pricePerHour = 0;
 
-Console.WriteLine("Seja bem vindo ao sistema de estacionamento!\n" +
-                  "Digite o preço inicial:");
-precoInicial = Convert.ToDecimal(Console.ReadLine());
+Console.Title = "DOTNET PARKING SYSTEM";
+Console.ForegroundColor = ConsoleColor.Magenta;
+Console.WriteLine("===================================");
+Console.WriteLine("| WELCOME TO DOTNET PARKING SYSTEM |");
+Console.WriteLine("===================================");
+Console.ResetColor();
+Console.WriteLine("Please enter the initial price for parking:");
+initialPrice = Convert.ToDecimal(Console.ReadLine());
 
-Console.WriteLine("Agora digite o preço por hora:");
-precoPorHora = Convert.ToDecimal(Console.ReadLine());
+Console.WriteLine("Now, please enter the hourly rate for parking:");
+pricePerHour = Convert.ToDecimal(Console.ReadLine());
 
-// Instancia a classe Estacionamento, já com os valores obtidos anteriormente
-Estacionamento es = new Estacionamento(precoInicial, precoPorHora);
+
+Parking parking = new Parking(initialPrice, pricePerHour);
 
 string opcao = string.Empty;
-bool exibirMenu = true;
+bool displayMenu = true;
 
-// Realiza o loop do menu
-while (exibirMenu)
+while (displayMenu)
 {
     Console.Clear();
-    Console.WriteLine("Digite a sua opção:");
-    Console.WriteLine("1 - Cadastrar veículo");
-    Console.WriteLine("2 - Remover veículo");
-    Console.WriteLine("3 - Listar veículos");
-    Console.WriteLine("4 - Encerrar");
+    Console.WriteLine("===================================");
+    Console.WriteLine("       DOTNET PARKING SYSTEM");
+    Console.WriteLine("===================================");
+    Console.WriteLine("Please choose an option:");
+    Console.WriteLine("1 - Add vehicle");
+    Console.WriteLine("2 - Remove vehicle");
+    Console.WriteLine("3 - List vehicles");
+    Console.WriteLine("4 - Exit");
 
     switch (Console.ReadLine())
     {
         case "1":
-            es.AdicionarVeiculo();
+            parking.AddVehicle();
             break;
 
         case "2":
-            es.RemoverVeiculo();
+            parking.RemoveVehicle();
             break;
 
         case "3":
-            es.ListarVeiculos();
+            parking.ListVehicles();
             break;
 
         case "4":
-            exibirMenu = false;
+            displayMenu = false;
             break;
 
         default:
-            Console.WriteLine("Opção inválida");
+            Console.WriteLine("Invalid option, please try again.");
             break;
     }
 
-    Console.WriteLine("Pressione uma tecla para continuar");
+    Console.WriteLine("Press any key to continue...");
     Console.ReadLine();
 }
 
-Console.WriteLine("O programa se encerrou");
+Console.WriteLine("Thank you for using the DOTNET Parking System!");

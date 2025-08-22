@@ -1,0 +1,15 @@
+/home/flawbert/parking-system/bin/Debug/net9.0/ParkingSystem
+/home/flawbert/parking-system/bin/Debug/net9.0/ParkingSystem.deps.json
+/home/flawbert/parking-system/bin/Debug/net9.0/ParkingSystem.runtimeconfig.json
+/home/flawbert/parking-system/bin/Debug/net9.0/ParkingSystem.dll
+/home/flawbert/parking-system/bin/Debug/net9.0/ParkingSystem.pdb
+/home/flawbert/parking-system/obj/Debug/net9.0/ParkingSystem.GeneratedMSBuildEditorConfig.editorconfig
+/home/flawbert/parking-system/obj/Debug/net9.0/ParkingSystem.AssemblyInfoInputs.cache
+/home/flawbert/parking-system/obj/Debug/net9.0/ParkingSystem.AssemblyInfo.cs
+/home/flawbert/parking-system/obj/Debug/net9.0/ParkingSystem.csproj.CoreCompileInputs.cache
+/home/flawbert/parking-system/obj/Debug/net9.0/ParkingSystem.sourcelink.json
+/home/flawbert/parking-system/obj/Debug/net9.0/ParkingSystem.dll
+/home/flawbert/parking-system/obj/Debug/net9.0/refint/ParkingSystem.dll
+/home/flawbert/parking-system/obj/Debug/net9.0/ParkingSystem.pdb
+/home/flawbert/parking-system/obj/Debug/net9.0/ParkingSystem.genruntimeconfig.cache
+/home/flawbert/parking-system/obj/Debug/net9.0/ref/ParkingSystem.dll
